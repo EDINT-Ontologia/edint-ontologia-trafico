@@ -1,4 +1,4 @@
-# Ontología para la representación del tráfico de vehículos en las ciudades (Vehicle traffic ontology)
+# Ontología EDINT de Tráfico de Vehículos en las Ciudades
 
 La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos.
 
