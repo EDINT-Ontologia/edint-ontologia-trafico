@@ -22,7 +22,7 @@
      xmlns:edinttraf="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/trafico">
-        <owl:versionIRI rdf:resource="https://edint.es/def/trafico"/>
+        <owl:versionIRI rdf:resource="https://edint.es/def/trafico/0.1.1"/>
         <dcterms:created>2026-05-11</dcterms:created>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
