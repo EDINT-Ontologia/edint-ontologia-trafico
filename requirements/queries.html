@@ -194,7 +194,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </ul>
         </div>
         <div class="main-content">
-    <section class="file-card" id="TRA01_sparql"><div class="file-header">TRA01.sparql</div><div class="query-block"><span class="query-title">TRA01: ¿En qué tramo ocurre cada incidencia?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#&gt;</span>
+    <section class="file-card" id="TRA01_sparql"><div class="file-header">TRA01.sparql</div><div class="query-block"><span class="query-title">TRA01: ¿En qué tramo ocurre cada incidencia?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?incidence</span> <span class="nv">?section</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -202,7 +202,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              <span class="nn">edinttraf</span><span class="p">:</span><span class="nt">IncidenceInSection</span> <span class="nv">?section</span> <span class="p">.</span>
 <span class="p">}</span>
 </pre></div>
-</div></section><section class="file-card" id="TRA02_sparql"><div class="file-header">TRA02.sparql</div><div class="query-block"><span class="query-title">TRA02: ¿Qué incidencias son planificadas y cuáles no?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+</div></section><section class="file-card" id="TRA02_sparql"><div class="file-header">TRA02.sparql</div><div class="query-block"><span class="query-title">TRA02: ¿Qué incidencias son planificadas y cuáles no?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?incidence</span> <span class="nv">?type</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -217,7 +217,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-</div></section><section class="file-card" id="TRA03_sparql"><div class="file-header">TRA03.sparql</div><div class="query-block"><span class="query-title">TRA03: ¿Qué incidencias están activas en un intervalo temporal?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+</div></section><section class="file-card" id="TRA03_sparql"><div class="file-header">TRA03.sparql</div><div class="query-block"><span class="query-title">TRA03: ¿Qué incidencias están activas en un intervalo temporal?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">schema</span><span class="p">:</span> <span class="nl">&lt;http://schema.org/&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?incidence</span> <span class="nv">?start</span> <span class="nv">?end</span>
@@ -229,7 +229,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="k">FILTER</span> <span class="p">(</span><span class="nv">?start</span> <span class="o">&lt;=</span> <span class="s">&quot;FECHA-INICIO-INTERVALO&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">?end</span> <span class="o">&gt;=</span> <span class="s">&quot;FECHA-FIN-INTERVALO&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></div>
-</div></section><section class="file-card" id="TRA04_sparql"><div class="file-header">TRA04.sparql</div><div class="query-block"><span class="query-title">TRA04: ¿Qué equipos monitorizan cada tramo?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+</div></section><section class="file-card" id="TRA04_sparql"><div class="file-header">TRA04.sparql</div><div class="query-block"><span class="query-title">TRA04: ¿Qué equipos monitorizan cada tramo?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?equipment</span> <span class="nv">?section</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -237,7 +237,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              <span class="nn">edinttraf</span><span class="p">:</span><span class="nt">monitors</span> <span class="nv">?section</span> <span class="p">.</span>
 <span class="p">}</span>
 </pre></div>
-</div></section><section class="file-card" id="TRA05_sparql"><div class="file-header">TRA05.sparql</div><div class="query-block"><span class="query-title">TRA05: ¿Qué observaciones de tráfico se han realizado y qué sensores las han generado?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+</div></section><section class="file-card" id="TRA05_sparql"><div class="file-header">TRA05.sparql</div><div class="query-block"><span class="query-title">TRA05: ¿Qué observaciones de tráfico se han realizado y qué sensores las han generado?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?observation</span> <span class="nv">?sensor</span>
@@ -247,7 +247,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 </pre></div>
 </div></section><section class="file-card" id="TRA06_sparql"><div class="file-header">TRA06.sparql</div><div class="query-block"><span class="query-title">TRA06: ¿Qué valores de velocidad se han observado?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?observation</span> <span class="nv">?value</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -255,7 +255,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                <span class="nn">sosa</span><span class="p">:</span><span class="nt">hasSimpleResult</span> <span class="nv">?value</span> <span class="p">.</span>
 </pre></div>
 </div></section><section class="file-card" id="TRA07_sparql"><div class="file-header">TRA07.sparql</div><div class="query-block"><span class="query-title">TRA07: ¿Qué tramos presentan mayor carga de tráfico?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?section</span> <span class="p">(</span><span class="nf">AVG</span><span class="p">(</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">float</span><span class="p">(</span><span class="nv">?value</span><span class="p">))</span> <span class="k">AS</span> <span class="nv">?avgLoad</span><span class="p">)</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -266,7 +266,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="k">GROUP BY</span> <span class="nv">?section</span>
 <span class="k">ORDER BY</span> <span class="k">DESC</span><span class="p">(</span><span class="nv">?avgLoad</span><span class="p">)</span>
 </pre></div>
-</div></section><section class="file-card" id="TRA08_sparql"><div class="file-header">TRA08.sparql</div><div class="query-block"><span class="query-title">TRA08: ¿Cuáles son los valores de intensidad en tiempo real registrados las estaciones que se encuentran en una calle determinada?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span>   <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+</div></section><section class="file-card" id="TRA08_sparql"><div class="file-header">TRA08.sparql</div><div class="query-block"><span class="query-title">TRA08: ¿Cuáles son los valores de intensidad en tiempo real registrados las estaciones que se encuentran en una calle determinada?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span>   <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">escjr</span><span class="p">:</span>  <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span>   <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span>   <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
@@ -298,7 +298,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 <span class="c">#Variante más realista para tiempo real --&gt; última observación</span>
 
-<span class="k">PREFIX</span> <span class="nn">edintedinttraf</span><span class="p">:</span>   <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edintedinttrafico#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintedinttraf</span><span class="p">:</span>   <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">escjr</span><span class="p">:</span>  <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span>   <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
 
@@ -325,7 +325,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="p">}</span>
 </pre></div>
 </div></section><section class="file-card" id="TRA09_sparql"><div class="file-header">TRA09.sparql</div><div class="query-block"><span class="query-title">TRA09: ¿Cuáles son las incidencias de tráfico en una fecha dada?</span><div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>    <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span>   <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edinttraf</span><span class="p">:</span>   <span class="nl">&lt;https://edint.es/def/trafico#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">schema</span><span class="p">:</span> <span class="nl">&lt;http://schema.org/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span>    <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 

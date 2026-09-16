@@ -1,7 +1,7 @@
 
 # TRA01: ¿En qué tramo ocurre cada incidencia?
 
-PREFIX edinttraf: <http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#>
+PREFIX edinttraf: <https://edint.es/def/trafico#>
 
 SELECT ?incidence ?section
 WHERE {

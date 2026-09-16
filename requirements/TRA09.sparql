@@ -2,7 +2,7 @@
 # TRA09: ¿Cuáles son las incidencias de tráfico en una fecha dada?
 
 PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX edinttraf:   <http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#>
+PREFIX edinttraf:   <https://edint.es/def/trafico#>
 PREFIX schema: <http://schema.org/>
 PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
 

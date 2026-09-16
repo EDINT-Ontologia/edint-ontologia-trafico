@@ -2,7 +2,7 @@
 # TRA06: ¿Qué valores de velocidad se han observado?
 
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
-PREFIX edinttraf: <http://vocab.linkeddata.es/datosabiertos/def/transporte/edinttrafico#>
+PREFIX edinttraf: <https://edint.es/def/trafico#>
 
 SELECT ?observation ?value
 WHERE {
