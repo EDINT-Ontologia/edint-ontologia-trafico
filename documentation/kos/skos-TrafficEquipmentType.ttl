@@ -6,8 +6,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
-@prefix edinttrafequiptype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/TrafficEquipmentType/> .
+@prefix edintkos: <https://edint.es/kos/> .
+@prefix edinttrafequiptype: <https://edint.es/kos/TrafficEquipmentType/> .
 
 edintkos:TrafficEquipmentType
   dct:title "Tesauro que recoge los tipos de equipo de tráfico; es decir tanto los dispositivos que permiten controlar el tráfico como los dispositivos que permiten la realización del conteo de vehículos (intensidad del tráfico) junto con la obtención del grado de ocupación de la vía."@es ;
