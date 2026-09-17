@@ -21,7 +21,8 @@
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:edinttraf="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
-     xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/trafico">
+     xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/trafico">
         <owl:versionIRI rdf:resource="https://edint.es/def/trafico/0.1.1"/>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
@@ -1460,6 +1461,13 @@
         <rdfs:label xml:lang="en">Created</rdfs:label>
         <rdfs:comment xml:lang="es">Fecha de creación del recurso.</rdfs:comment>
     </rdf:Description>
+    <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
+    <owl:Ontology rdf:about="https://edint.es/def/trafico">
+        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+    </owl:Ontology>
 </rdf:RDF>
 
 
