@@ -48,6 +48,7 @@
         <rdfs:comment xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</rdfs:comment>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-trafico/releases/tag/v0.1.0"/>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-trafico"/>
         <owl:versionInfo>0.1.1</owl:versionInfo>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-11</dcterms:created>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
