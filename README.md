@@ -1,5 +1,9 @@
 # Ontología para la representación del tráfico de vehículos en las ciudades (Vehicle traffic ontology)
 
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/trafico)
+![Prefijo](https://img.shields.io/badge/prefijo-edinttraf-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
+
 La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos.
 
 # Propósito y alcance de la ontología (Purpose and scope of the ontology)
