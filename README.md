@@ -12,7 +12,7 @@ El propósito de esta ontología es el de proporcionar un vocabulario común par
 
 # Prefijo y espacio de nombres de la ontología (Prefix and namespace of the ontology)
 
-El prefijo de la ontología es: edinttraf y se encuentra publicada en el espacio de nombres: [https://edint.es/def/trafico#]([(Prefix and namespace of the ontology](https://edint.es/def/trafico#)
+El prefijo de esta ontología es `edinttraf` y se publica bajo el espacio de nombres https://edint.es/def/trafico#
 
 # Modelo conceptual de la ontología (Ontology conceptual model)
 
