@@ -1,4 +1,4 @@
-# Ontología para la representación del tráfico de vehículos en las ciudades (Vehicle traffic ontology)
+# Ontología EDINT de Tráfico de Vehículos en las Ciudades
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/trafico)
 ![Prefijo](https://img.shields.io/badge/prefijo-edinttraf-informational)
