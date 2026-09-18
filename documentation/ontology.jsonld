@@ -1,15 +1,107 @@
 [ {
   "@id" : "_:genid1",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "WGS84 Geo Positioning"
+  }, {
+    "@language" : "en",
+    "@value" : "WGS84 Geo Positioning"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "OWL-Time"
+  }, {
+    "@language" : "en",
+    "@value" : "OWL-Time"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2006/time"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SOSA/SSN"
+  }, {
+    "@language" : "en",
+    "@value" : "SOSA/SSN"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/sosa"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid3"
+      "@id" : "_:genid16"
     } ]
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://edint.es/kos/IncidentType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://edint.es/kos/TrafficEquipmentType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -19,7 +111,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://edint.es/def/trafico#ControlEquipment"
+    }, {
+      "@id" : "https://edint.es/def/trafico#Incident"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -30,41 +132,78 @@
   } ]
 }, {
   "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "https://edint.es/kos/IncidentType"
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
   } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
   } ]
 }, {
   "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid7"
-    } ]
+  "http://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "QUDT"
+  }, {
+    "@language" : "en",
+    "@value" : "QUDT"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://qudt.org/schema/qudt"
   } ]
 }, {
   "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "https://edint.es/kos/TrafficEquipmentType"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Street catalogue (escjr)"
+  }, {
+    "@language" : "es",
+    "@value" : "Callejero (escjr)"
   } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
   } ]
 }, {
   "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://edint.es/def/trafico#ControlEquipment"
-    }, {
-      "@id" : "https://edint.es/def/trafico#Incident"
-    } ]
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
@@ -92,6 +231,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
@@ -187,6 +332,9 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -227,7 +375,7 @@
   }, {
     "@id" : "http://qudt.org/schema/qudt/Quantifiable"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid28"
   } ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/Unit",
@@ -267,6 +415,15 @@
     "@language" : "en",
     "@value" : "Organization"
   } ]
+}, {
+  "@id" : "http://schema.org/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/creativeWorkStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/datePosted",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -316,6 +473,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
+}, {
+  "@id" : "http://schema.org/funding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/rangeIncludes",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1114,6 +1274,12 @@
     "@value" : "was observed by"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
@@ -1162,37 +1328,69 @@
 }, {
   "@id" : "https://edint.es/def/trafico",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "es",
+    "@value" : "El propósito de esta ontología de Tráfico es representar los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."
+  }, {
+    "@language" : "en",
+    "@value" : "The purpose of the traffic ontology is to represent vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@language" : "en",
+    "@value" : "EDINT Vehicle Traffic Ontology. EDINT. Revision: v0.1.1."
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT de Tráfico de Vehículos en las Ciudades. EDINT. Revisión: v0.1.1."
+  } ],
   "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2026-05-11"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Daniel Doña"
+    "@id" : "_:genid1"
   }, {
-    "@value" : "Edna Ruckhaus"
+    "@id" : "_:genid2"
   }, {
-    "@value" : "Lucía Sánchez"
+    "@id" : "_:genid3"
   }, {
-    "@value" : "Socorro Bernardos"
+    "@id" : "_:genid4"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-05-11"
+    "@value" : "2026-09-17"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-09-17"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "_:genid5"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@language" : "es",
-    "@value" : "Vocabulario para la representación de datos sobre el tráfico de vehículos en las ciudades"
-  }, {
     "@language" : "en",
-    "@value" : "Vocabulary for the representation of data on vehicle traffic in cities"
+    "@value" : "EDINT Vehicle Traffic Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT de Tráfico de Vehículos en las Ciudades"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "edinttraf"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@id" : "https://edint.es/def/trafico#"
+  } ],
+  "http://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-trafico"
+  } ],
+  "http://schema.org/creativeWorkStatus" : [ {
+    "@language" : "en",
+    "@value" : "Ontology Specification"
+  } ],
+  "http://schema.org/funding" : [ {
+    "@value" : "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1201,14 +1399,50 @@
     "@language" : "en",
     "@value" : "The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tráfico de Vehículos"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle Traffic"
+  } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-trafico/releases/tag/v0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://edint.es/def/trafico"
+    "@id" : "https://edint.es/def/trafico/0.1.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.1.1"
+  } ],
+  "https://w3id.org/widoco/vocab#jsonldSerialization" : [ {
+    "@value" : "ontology.jsonld"
+  } ],
+  "https://w3id.org/widoco/vocab#ntSerialization" : [ {
+    "@value" : "ontology.nt"
+  } ],
+  "https://w3id.org/widoco/vocab#rdfxmlSerialization" : [ {
+    "@value" : "ontology.rdf"
+  } ],
+  "https://w3id.org/widoco/vocab#turtleSerialization" : [ {
+    "@value" : "ontology.ttl"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyLabel" : [ {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
   } ]
 }, {
   "@id" : "https://edint.es/def/trafico#ControlEquipment",
@@ -1625,7 +1859,7 @@
     "@value" : "type of Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "https://edint.es/def/trafico#intensity",
@@ -1773,7 +2007,7 @@
     "@value" : "Número de sentidos de circulación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1796,7 +2030,7 @@
     "@value" : "Número de carriles de circulación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1918,7 +2152,7 @@
     "@value" : "type of Traffic Equipment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "https://edint.es/def/trafico#urban",
@@ -2018,4 +2252,27 @@
     "@language" : "en",
     "@value" : "type of traffic devices"
   } ]
+}, {
+  "@id" : "https://oeg.fi.upm.es/",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Ontology Engineering Group, UPM"
+  } ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#jsonldSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#ntSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#rdfxmlSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#turtleSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#vocabularyIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#vocabularyLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
