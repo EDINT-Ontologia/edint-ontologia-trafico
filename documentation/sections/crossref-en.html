@@ -152,10 +152,6 @@ This section provides details for each class and property defined by Vehicle Tra
    <dd>
     <a href="#TrafficObservationPoint" title="https://edint.es/def/trafico#TrafficObservationPoint">Traffic observation point</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>is in range of</dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/sosa/hasFeatureOfInterest" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="http://www.opengis.net/ont/sf#Point">
@@ -260,10 +256,6 @@ This section provides details for each class and property defined by Vehicle Tra
    <dd>
     <a href="#TrafficProperty" title="https://edint.es/def/trafico#TrafficProperty">Traffic property</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>is in range of</dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="http://www.w3.org/ns/sosa/Observation">
@@ -291,11 +283,7 @@ This section provides details for each class and property defined by Vehicle Tra
    </dd>
    <dt>is in domain of</dt>
    <dd>
-    <a href="#http://www.w3.org/ns/sosa/hasFeatureOfInterest" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/hasResult" title="http://www.w3.org/ns/sosa/hasResult">has result</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/madeBySensor" title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">phenomenon time</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>is in range of</dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/sosa/wasObservedBy" title="http://www.w3.org/ns/sosa/wasObservedBy">was observed by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://www.w3.org/ns/sosa/hasResult" title="http://www.w3.org/ns/sosa/hasResult">has result</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -388,14 +376,6 @@ This section provides details for each class and property defined by Vehicle Tra
    <dd>
     <a href="#TrafficEquipment" title="https://edint.es/def/trafico#TrafficEquipment">Traffic equipment</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>is in domain of</dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/sosa/isHostedBy" title="http://www.w3.org/ns/sosa/isHostedBy">is hosted by</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>is in range of</dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/sosa/madeBySensor" title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="http://www.opengis.net/ont/geosparql#SpatialObject">
@@ -477,10 +457,6 @@ This section provides details for each class and property defined by Vehicle Tra
    <dt>has sub-classes</dt>
    <dd>
     <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Time interval</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>is in range of</dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">phenomenon time</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -772,26 +748,6 @@ This section provides details for each class and property defined by Vehicle Tra
   </dl>
   <div class="description">
    <dl>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Actuation" target="_blank" title="http://www.w3.org/ns/sosa/Actuation">Actuation</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/ObservationCollection" target="_blank" title="http://www.w3.org/ns/sosa/ObservationCollection">Observation Collection</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Sampling" target="_blank" title="http://www.w3.org/ns/sosa/Sampling">Sampling</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Sample" target="_blank" title="http://www.w3.org/ns/sosa/Sample">Sample</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
     <dt>is inverse of</dt>
     <dd>
      <a href="http://www.w3.org/ns/sosa/isFeatureOfInterestOf" target="_blank" title="http://www.w3.org/ns/sosa/isFeatureOfInterestOf">is Feature Of Interest Of</a> <sup class="type-op" title="object property">op</sup>
@@ -844,26 +800,6 @@ This section provides details for each class and property defined by Vehicle Tra
     <dt>has domain</dt>
     <dd>
      <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Actuation" target="_blank" title="http://www.w3.org/ns/sosa/Actuation">Actuation</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/ObservationCollection" target="_blank" title="http://www.w3.org/ns/sosa/ObservationCollection">Observation Collection</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Sampling" target="_blank" title="http://www.w3.org/ns/sosa/Sampling">Sampling</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Result" target="_blank" title="http://www.w3.org/ns/sosa/Result">Result</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Sample" target="_blank" title="http://www.w3.org/ns/sosa/Sample">Sample</a> <sup class="type-ep" title="external property">ep</sup>
     </dd>
     <dt>is inverse of</dt>
     <dd>
@@ -937,23 +873,6 @@ This section provides details for each class and property defined by Vehicle Tra
   </dl>
   <div class="description">
    <dl>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Actuator" target="_blank" title="http://www.w3.org/ns/sosa/Actuator">Actuator</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Platform" target="_blank" title="http://www.w3.org/ns/sosa/Platform">Platform</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Sampler" target="_blank" title="http://www.w3.org/ns/sosa/Sampler">Sampler</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Platform" target="_blank" title="http://www.w3.org/ns/sosa/Platform">Platform</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
     <dt>is inverse of</dt>
     <dd>
      <a href="#http://www.w3.org/ns/sosa/hosts" title="http://www.w3.org/ns/sosa/hosts">hosts</a> <sup class="type-op" title="object property">op</sup>
@@ -1015,17 +934,6 @@ This section provides details for each class and property defined by Vehicle Tra
     <dd>
      <a href="http://www.w3.org/ns/sosa/madeBySystem" target="_blank" title="http://www.w3.org/ns/sosa/madeBySystem">made By System</a> <sup class="type-op" title="object property">op</sup>
     </dd>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/ObservationCollection" target="_blank" title="http://www.w3.org/ns/sosa/ObservationCollection">Observation Collection</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
     <dt>is inverse of</dt>
     <dd>
      <a href="http://www.w3.org/ns/sosa/madeObservation" target="_blank" title="http://www.w3.org/ns/sosa/madeObservation">made Observation</a> <sup class="type-op" title="object property">op</sup>
@@ -1070,20 +978,6 @@ This section provides details for each class and property defined by Vehicle Tra
   </dl>
   <div class="description">
    <dl>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/ObservationCollection" target="_blank" title="http://www.w3.org/ns/sosa/ObservationCollection">Observation Collection</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Property" target="_blank" title="http://www.w3.org/ns/sosa/Property">Property</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
     <dt>is inverse of</dt>
     <dd>
      <a href="#http://www.w3.org/ns/sosa/wasObservedBy" title="http://www.w3.org/ns/sosa/wasObservedBy">was observed by</a> <sup class="type-op" title="object property">op</sup>
@@ -1112,17 +1006,6 @@ This section provides details for each class and property defined by Vehicle Tra
     <dd>
      <a href="http://www.w3.org/ns/sosa/forProperty" target="_blank" title="http://www.w3.org/ns/sosa/forProperty">for Property</a> <sup class="type-op" title="object property">op</sup>
     </dd>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Property" target="_blank" title="http://www.w3.org/ns/sosa/Property">Property</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
     <dt>is inverse of</dt>
     <dd>
      <a href="#http://www.w3.org/ns/sosa/isObservedBy" title="http://www.w3.org/ns/sosa/isObservedBy">is Observed By</a> <sup class="type-op" title="object property">op</sup>
@@ -1145,27 +1028,6 @@ This section provides details for each class and property defined by Vehicle Tra
     <a href="http://www.w3.org/ns/sosa/common/">http://www.w3.org/ns/sosa/common/</a>
    </dd>
   </dl>
-  <div class="description">
-   <dl>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Actuation" target="_blank" title="http://www.w3.org/ns/sosa/Actuation">Actuation</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/ObservationCollection" target="_blank" title="http://www.w3.org/ns/sosa/ObservationCollection">Observation Collection</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Sampling" target="_blank" title="http://www.w3.org/ns/sosa/Sampling">Sampling</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">Temporal Entity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
  </div>
  <div class="entity" id="startOfSection">
   <h3>start of section<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -1241,17 +1103,6 @@ This section provides details for each class and property defined by Vehicle Tra
   </dl>
   <div class="description">
    <dl>
-    <dt>domain includes</dt>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/Property" target="_blank" title="http://www.w3.org/ns/sosa/Property">Property</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-    <dt>range includes</dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="http://www.w3.org/ns/sosa/ObservationCollection" target="_blank" title="http://www.w3.org/ns/sosa/ObservationCollection">Observation Collection</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
     <dt>is inverse of</dt>
     <dd>
      <a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> <sup class="type-op" title="object property">op</sup>
@@ -1855,6 +1706,5 @@ This section provides details for each class and property defined by Vehicle Tra
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
-<sup class="type-ep" title="External Properties">ep</sup>: External Properties
 </div>
 </div>
