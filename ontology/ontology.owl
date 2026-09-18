@@ -43,6 +43,8 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Vehicle Traffic Ontology</dcterms:title>
+        <rdfs:label xml:lang="es">Tráfico de Vehículos</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle Traffic</rdfs:label>
         <vann:preferredNamespacePrefix>edinttraf</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/trafico#"/>
         <rdfs:comment xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</rdfs:comment>
