@@ -8,3 +8,4 @@ SELECT ?observation ?value
 WHERE {
   ?observation sosa:observedProperty edinttraf:speed ;
                sosa:hasSimpleResult ?value .
+}
