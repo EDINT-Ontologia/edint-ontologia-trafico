@@ -1,20 +1,78 @@
 <https://edint.es/def/trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://edint.es/def/trafico> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/trafico> .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/created> "2026-05-11" .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> "Daniel Doña" .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/issued> "2026-05-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/trafico> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/trafico/0.1.1> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/abstract> "El propósito de esta ontología de Tráfico es representar los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."@es .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/abstract> "The purpose of the traffic ontology is to represent vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Vehicle Traffic Ontology. EDINT. Revision: v0.1.1."@en .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT de Tráfico de Vehículos en las Ciudades. EDINT. Revisión: v0.1.1."@es .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/created> "2026-05-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid4 .
+_:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "Vocabulario para la representación de datos sobre el tráfico de vehículos en las ciudades"@es .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "Vocabulary for the representation of data on vehicle traffic in cities"@en .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/publisher> _:genid5 .
+_:genid5 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "EDINT Vehicle Traffic Ontology"@en .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "Ontología EDINT de Tráfico de Vehículos en las Ciudades"@es .
 <https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edinttraf" .
 <https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/trafico#> .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."@es .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
+<https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico de Vehículos"@es .
+<https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle Traffic"@en .
 <https://edint.es/def/trafico> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-trafico/releases/tag/v0.1.0> .
 <https://edint.es/def/trafico> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://edint.es/def/trafico> <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-trafico> .
+<https://edint.es/def/trafico> <https://schema.org/creativeWorkStatus> "Ontology Specification"@en .
+<https://edint.es/def/trafico> <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid6 .
+_:genid6 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid11 .
+_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid12 .
+_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+<https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid13 .
+_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
 # 
 # 
 # #################################################################
@@ -51,6 +109,12 @@
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -66,6 +130,9 @@
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -99,6 +166,48 @@
 # 
 # http://www.w3.org/2004/02/skos/core#note
 <http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/domainIncludes
+<https://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/funding
+<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/rangeIncludes
+<https://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#jsonldSerialization
+<https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#ntSerialization
+<https://w3id.org/widoco/vocab#ntSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#rdfxmlSerialization
+<https://w3id.org/widoco/vocab#rdfxmlSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#turtleSerialization
+<https://w3id.org/widoco/vocab#turtleSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#vocabularyIRI
+<https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#vocabularyLabel
+<https://w3id.org/widoco/vocab#vocabularyLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -181,34 +290,34 @@
 # http://www.w3.org/ns/sosa/hasFeatureOfInterest
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sample> .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/common/> .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "has feature of interest"@en .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2004/02/skos/core#example> "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."@en .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sample> .
 # 
 # http://www.w3.org/ns/sosa/hasResult
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/isResultOf> .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/hasResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
-<http://www.w3.org/ns/sosa/hasResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/hasResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
-<http://www.w3.org/ns/sosa/hasResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
-<http://www.w3.org/ns/sosa/hasResult> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Result> .
-<http://www.w3.org/ns/sosa/hasResult> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sample> .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación que vincula una observación, una actuación o un acto de muestreo con un resultado o una muestra."@es .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation linking an Observation or Actuation or act of Sampling and a Result or Sample."@en .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/common/> .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
 <http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "tiene resultado"@es .
+<http://www.w3.org/ns/sosa/hasResult> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
+<http://www.w3.org/ns/sosa/hasResult> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/hasResult> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
+<http://www.w3.org/ns/sosa/hasResult> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
+<http://www.w3.org/ns/sosa/hasResult> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Result> .
+<http://www.w3.org/ns/sosa/hasResult> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sample> .
 # 
 # http://www.w3.org/ns/sosa/hosts
 <http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -219,15 +328,15 @@
 # 
 # http://www.w3.org/ns/sosa/isHostedBy
 <http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuator> .
-<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Platform> .
-<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampler> .
-<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
-<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Platform> .
 <http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."@en .
 <http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/common/> .
 <http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is hosted by"@en .
+<http://www.w3.org/ns/sosa/isHostedBy> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuator> .
+<http://www.w3.org/ns/sosa/isHostedBy> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Platform> .
+<http://www.w3.org/ns/sosa/isHostedBy> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampler> .
+<http://www.w3.org/ns/sosa/isHostedBy> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/isHostedBy> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Platform> .
 # 
 # http://www.w3.org/ns/sosa/isObservedBy
 <http://www.w3.org/ns/sosa/isObservedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -240,14 +349,14 @@
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/sosa/madeBySystem> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/madeObservation> .
-<http://www.w3.org/ns/sosa/madeBySensor> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/madeBySensor> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
-<http://www.w3.org/ns/sosa/madeBySensor> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sensor> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an Observation and the Sensor which made the Observation."@en .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/obs/> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "made by sensor"@en .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "made by sensor or observer"@en .
+<http://www.w3.org/ns/sosa/madeBySensor> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/madeBySensor> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
+<http://www.w3.org/ns/sosa/madeBySensor> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sensor> .
 # 
 # http://www.w3.org/ns/sosa/madeBySystem
 <http://www.w3.org/ns/sosa/madeBySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -258,47 +367,47 @@
 # http://www.w3.org/ns/sosa/observedProperty
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/wasObservedBy> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Property> .
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en .
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/obs/> .
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "observed property"@en .
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2004/02/skos/core#note> "\n  'observed property' covers the concepts referred to in [VIM] as 'measurand' (quantitative values) and 'examinand' (categorical and nominal values — [VIM4]), as well as complex and structured properties whose values may be represented as lists, vectors, arrays, rasters, geometries, etc. More specific terms are used in other contexts for related concepts, such as 'analyte' (chemistry) and 'determinand' (water quality).\n  "@en .
+<http://www.w3.org/ns/sosa/observedProperty> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/observedProperty> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
+<http://www.w3.org/ns/sosa/observedProperty> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://www.w3.org/ns/sosa/observedProperty> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Property> .
 # 
 # http://www.w3.org/ns/sosa/observes
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/sosa/forProperty> .
-<http://www.w3.org/ns/sosa/observes> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
-<http://www.w3.org/ns/sosa/observes> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://www.w3.org/ns/sosa/observes> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Property> .
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en .
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/obs/> .
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "observes"@en .
+<http://www.w3.org/ns/sosa/observes> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/observes> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://www.w3.org/ns/sosa/observes> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Property> .
 # 
 # http://www.w3.org/ns/sosa/phenomenonTime
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://schema.org/rangeIncludes> <http://www.w3.org/2006/time#TemporalEntity> .
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."@en .
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/common/> .
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#label> "phenomenon time"@en .
+<http://www.w3.org/ns/sosa/phenomenonTime> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
+<http://www.w3.org/ns/sosa/phenomenonTime> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/phenomenonTime> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
+<http://www.w3.org/ns/sosa/phenomenonTime> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
+<http://www.w3.org/ns/sosa/phenomenonTime> <https://schema.org/rangeIncludes> <http://www.w3.org/2006/time#TemporalEntity> .
 # 
 # http://www.w3.org/ns/sosa/wasObservedBy
 <http://www.w3.org/ns/sosa/wasObservedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/wasObservedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Property> .
-<http://www.w3.org/ns/sosa/wasObservedBy> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3.org/ns/sosa/wasObservedBy> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
 <http://www.w3.org/ns/sosa/wasObservedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "relation from a Property to an Observation that observed it"@en .
 <http://www.w3.org/ns/sosa/wasObservedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/obs/> .
 <http://www.w3.org/ns/sosa/wasObservedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was observed by"@en .
+<http://www.w3.org/ns/sosa/wasObservedBy> <https://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Property> .
+<http://www.w3.org/ns/sosa/wasObservedBy> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/wasObservedBy> <https://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservationCollection> .
 # 
 # https://edint.es/def/trafico#containsStreetSection
 <https://edint.es/def/trafico#containsStreetSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -333,18 +442,18 @@
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/trafico#Incident> .
-<https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/IncidentType> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/IncidentType> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de incidencia, pueden ser planificadas o no planificadas."@es .
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of incident, planned or unplannedt"@en .
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de Incidencia"@es .
@@ -374,18 +483,18 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/trafico#TrafficEquipment> .
-<https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/TrafficEquipmentType> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/TrafficEquipmentType> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de equipo de tráfico, equipos de control y dispositivos de medición"@es .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of traffic equipment, monitor equipment or meassuring devices"@en .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de Equipo de Tráfico"@es .
@@ -542,15 +651,15 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # 
 # https://edint.es/def/trafico#numDirections
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of directions of traffic"@en .
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de sentidos de circulación"@es .
@@ -559,15 +668,15 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://edint.es/def/trafico#numLanes
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
-_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of lanes of traffic"@en .
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de carriles de circulación"@es .
@@ -625,10 +734,10 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Concept> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantifiable> .
-<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to \"http://physics.nist.gov/Pubs/SP811/sec07.html\", NIST SP 811, section 7 for more on quantity values." .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/schema/qudt> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity value" .
@@ -957,5 +1066,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/"@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
+# 
+<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
