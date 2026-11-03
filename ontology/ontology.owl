@@ -8,6 +8,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -16,60 +18,128 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:escjr="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xmlns:schema="https://schema.org/"
+     xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:geocore="https://datos.ign.es/def/geo_core#"
+     xmlns:schema1="http://schema.org/"
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:edinttraf="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
-     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
-     xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/trafico">
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
+    <owl:Ontology rdf:about="https://edint.es/def/trafico">
         <owl:versionIRI rdf:resource="https://edint.es/def/trafico/0.1.1"/>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Daniel Doña</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:abstract xml:lang="es">El propósito de esta ontología de Tráfico es representar los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</dcterms:abstract>
+        <dcterms:abstract xml:lang="en">The purpose of the traffic ontology is to represent vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</dcterms:abstract>
+        <dcterms:bibliographicCitation xml:lang="en">EDINT Vehicle Traffic Ontology. EDINT. Revision: v0.1.1.</dcterms:bibliographicCitation>
+        <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades. EDINT. Revisión: v0.1.1.</dcterms:bibliographicCitation>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-11</dcterms:created>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Edna Ruckhaus</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Edna Ruckhaus</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Daniel Doña</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Lucía Sánchez</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Socorro Bernardos</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Socorro Bernardos</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Lucía Sánchez</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</dcterms:title>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+        <dcterms:publisher>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://www.femp.es/"/>
+                <foaf:name>FEMP</foaf:name>
+                <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+            </rdf:Description>
+        </dcterms:publisher>
         <dcterms:title xml:lang="en">EDINT Vehicle Traffic Ontology</dcterms:title>
-        <rdfs:label xml:lang="es">Tráfico de Vehículos</rdfs:label>
-        <rdfs:label xml:lang="en">Vehicle Traffic</rdfs:label>
+        <dcterms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</dcterms:title>
         <vann:preferredNamespacePrefix>edinttraf</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/trafico#"/>
         <rdfs:comment xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</rdfs:comment>
+        <rdfs:label xml:lang="es">Tráfico de Vehículos</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle Traffic</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-trafico/releases/tag/v0.1.0"/>
-        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-trafico"/>
-        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
         <owl:versionInfo>0.1.1</owl:versionInfo>
-        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-11</dcterms:created>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
-        <dcterms:publisher rdf:parseType="Resource">
-            <foaf:name>FEMP</foaf:name>
-            <foaf:homepage rdf:resource="https://www.femp.es/"/>
-            <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
-        </dcterms:publisher>
-    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades. EDINT. Revisión: v0.1.1.</dcterms:bibliographicCitation>
-    <dcterms:bibliographicCitation xml:lang="en">EDINT Vehicle Traffic Ontology. EDINT. Revision: v0.1.1.</dcterms:bibliographicCitation>
-    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
-    <dcterms:abstract xml:lang="es">El propósito de esta ontología de Tráfico es representar los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</dcterms:abstract>
-    <dcterms:abstract xml:lang="en">The purpose of the traffic ontology is to represent vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</dcterms:abstract>
-</owl:Ontology>
-    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
-        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
-    </foaf:Organization>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-trafico"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">QUDT</rdfs:label>
+                <rdfs:label xml:lang="es">QUDT</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
+                <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+                <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+                <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+                <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+                <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
+                <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+    </owl:Ontology>
     
 
 
@@ -138,6 +208,18 @@
     
 
 
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
@@ -173,6 +255,12 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -239,6 +327,90 @@
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://schema.org/affiliation -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- https://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/domainIncludes"/>
+    
+
+
+    <!-- https://schema.org/funding -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
+    
+
+
+    <!-- https://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
     
 
 
@@ -366,17 +538,17 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
+        <rdfs:comment xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
+        <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
+        <skos:example xml:lang="en">For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.</skos:example>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
         <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
-        <rdfs:comment xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
-        <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
-        <skos:example xml:lang="en">For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.</skos:example>
     </owl:ObjectProperty>
     
 
@@ -386,18 +558,18 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasResult">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isResultOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Result"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
         <rdfs:comment xml:lang="es">Relación que vincula una observación, una actuación o un acto de muestreo con un resultado o una muestra.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relation linking an Observation or Actuation or act of Sampling and a Result or Sample.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
         <rdfs:label xml:lang="en">has result</rdfs:label>
         <rdfs:label xml:lang="es">tiene resultado</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
     </owl:ObjectProperty>
     
 
@@ -419,15 +591,15 @@
     <!-- http://www.w3.org/ns/sosa/isHostedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isHostedBy">
+        <rdfs:comment xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
+        <rdfs:label xml:lang="en">is hosted by</rdfs:label>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampler"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-        <rdfs:comment xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
-        <rdfs:label xml:lang="en">is hosted by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -451,14 +623,14 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/madeBySystem"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:comment xml:lang="en">Relation between an Observation and the Sensor which made the Observation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/obs/"/>
         <rdfs:label xml:lang="en">made by sensor</rdfs:label>
         <rdfs:label xml:lang="en">made by sensor or observer</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:ObjectProperty>
     
 
@@ -479,10 +651,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/wasObservedBy"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Property"/>
         <rdfs:comment xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/obs/"/>
@@ -490,6 +658,10 @@
         <skos:note xml:lang="en">
   &apos;observed property&apos; covers the concepts referred to in [VIM] as &apos;measurand&apos; (quantitative values) and &apos;examinand&apos; (categorical and nominal values — [VIM4]), as well as complex and structured properties whose values may be represented as lists, vectors, arrays, rasters, geometries, etc. More specific terms are used in other contexts for related concepts, such as &apos;analyte&apos; (chemistry) and &apos;determinand&apos; (water quality).
   </skos:note>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Property"/>
     </owl:ObjectProperty>
     
 
@@ -498,13 +670,13 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/forProperty"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Property"/>
         <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/obs/"/>
         <rdfs:label xml:lang="en">observes</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Property"/>
     </owl:ObjectProperty>
     
 
@@ -512,15 +684,15 @@
     <!-- http://www.w3.org/ns/sosa/phenomenonTime -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/phenomenonTime">
+        <rdfs:comment xml:lang="en">The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
+        <rdfs:label xml:lang="en">phenomenon time</rdfs:label>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
         <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
         <schema:rangeIncludes rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:comment xml:lang="en">The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/common/"/>
-        <rdfs:label xml:lang="en">phenomenon time</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -528,12 +700,12 @@
     <!-- http://www.w3.org/ns/sosa/wasObservedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/wasObservedBy">
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Property"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
         <rdfs:comment xml:lang="en">relation from a Property to an Observation that observed it</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/obs/"/>
         <rdfs:label xml:lang="en">was observed by</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Property"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservationCollection"/>
     </owl:ObjectProperty>
     
 
@@ -652,6 +824,62 @@
         <rdfs:label xml:lang="es">tipo de Equipo de Tráfico</rdfs:label>
         <rdfs:label xml:lang="en">type of Traffic Equipment</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/trafico#trafficViolationType -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/trafico#trafficViolationType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://edint.es/def/trafico#TrafficViolation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/TrafficViolationType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Relación entre una infracción de tráfico y el tipo de infracción según una taxonomía definida de conceptos SKOS.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between a traffic violation and the type of violation, according to a defined taxonomy of SKOS concepts.</rdfs:comment>
+        <rdfs:label xml:lang="es">tipo de infracción de tráfico</rdfs:label>
+        <rdfs:label xml:lang="en">traffic violation type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/trafico#linkedToVehicle -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/trafico#linkedToVehicle">
+        <rdfs:domain rdf:resource="https://edint.es/def/trafico#TrafficViolation"/>
+        <rdfs:range rdf:resource="https://edint.es/def/censo-vehiculos#Vehicle"/>
+        <rdfs:comment xml:lang="es">Relación entre una infracción de tráficulo y el vehículo que la comete.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between a traffic violation and the vehicle that commits it.</rdfs:comment>
+        <rdfs:label xml:lang="en">asociado al vehículo</rdfs:label>
+        <rdfs:label xml:lang="es">linked to vehicle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/trafico#provesTrafficViolation -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/trafico#provesTrafficViolation">
+        <rdfs:domain rdf:resource="https://edint.es/def/trafico#TrafficObservation"/>
+        <rdfs:range rdf:resource="https://edint.es/def/trafico#TrafficViolation"/>
+        <rdfs:comment xml:lang="es">Relación entre una observación realizada por un equipo de tráfico, por ejemplo un radar, y la infracción del vehículo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship between an observation made by a traffic equipment equipment—for example, a radar—and a vehicle&apos;s traffic violation.</rdfs:comment>
+        <rdfs:label xml:lang="es">demuestra infracción de tráfico</rdfs:label>
+        <rdfs:label xml:lang="en">proves traffic violation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/trafico#trafficViolationSeverity -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/trafico#trafficViolationSeverity"/>
     
 
 
@@ -1200,6 +1428,24 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- https://edint.es/def/censo-vehiculos#Vehicle -->
+
+    <owl:Class rdf:about="https://edint.es/def/censo-vehiculos#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/Vehicle/Vehicle"/>
+        <rdfs:comment xml:lang="es">Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))</rdfs:comment>
+        <rdfs:comment xml:lang="en">Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en)).</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+        <rdfs:label xml:lang="es">Vehículo</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://edint.es/def/trafico#ControlEquipment -->
 
     <owl:Class rdf:about="https://edint.es/def/trafico#ControlEquipment">
@@ -1324,6 +1570,23 @@
     
 
 
+    <!-- https://edint.es/def/trafico#TrafficViolation -->
+
+    <owl:Class rdf:about="https://edint.es/def/trafico#TrafficViolation">
+        <rdfs:comment xml:lang="en">Violation or direct non-compliance with the rules that drivers, pedestrians, and cyclists are required to observe when traveling on public roads.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Vulneración o el incumplimiento directo de las reglas que los conductores, peatones y ciclistas están obligados a respetar cuando circulan por las vías públicas.</rdfs:comment>
+        <rdfs:label xml:lang="es">infracción de tráfico</rdfs:label>
+        <rdfs:label xml:lang="en">traffic violation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4auto/Vehicle/Vehicle -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4auto/Vehicle/Vehicle"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1431,6 +1694,22 @@
     
 
 
+    <!-- https://edint.es/kos/TrafficViolationSeverity -->
+
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/TrafficViolationSeverity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://edint.es/kos/TrafficViolationType -->
+
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/TrafficViolationType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://edint.es/kos/IncidentType -->
 
     <owl:NamedIndividual rdf:about="https://edint.es/kos/IncidentType">
@@ -1451,6 +1730,198 @@
     
 
 
+    <!-- https://oeg.fi.upm.es/ -->
+
+    <owl:NamedIndividual rdf:about="https://oeg.fi.upm.es/">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">QUDT</rdfs:label>
+        <rdfs:label xml:lang="es">QUDT</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
+        <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">QUDT</rdfs:label>
+        <rdfs:label xml:lang="es">QUDT</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
+        <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+        <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
+        <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+        <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">QUDT</rdfs:label>
+        <rdfs:label xml:lang="es">QUDT</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+        <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
+        <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
+        <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
+        <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1466,69 +1937,6 @@
         <rdfs:label xml:lang="en">Created</rdfs:label>
         <rdfs:comment xml:lang="es">Fecha de creación del recurso.</rdfs:comment>
     </rdf:Description>
-    <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
-    <owl:Ontology rdf:about="https://edint.es/def/trafico">
-        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
-        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
-        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
-        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-            <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
-                <rdfs:label xml:lang="es">QUDT</rdfs:label>
-                <rdfs:label xml:lang="en">QUDT</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-                <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
-                <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
-                <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
-                <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
-                <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
-                <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
-                <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
-                <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
-                <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
-                <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
-                <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
-                <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-</owl:Ontology>
 </rdf:RDF>
 
 

@@ -19,7 +19,9 @@
 The class representing traffic measurement properties has several instances that are the defined measurements: <a href="#intensity">intensity</a>, <a href="#occupation">occupancy</a>, <a href="#load">load</a>, <a href="#speed">speed</a>, <a href="#level">level</a>, <a href="#composition">composition</a>, <a href="#density">density</a>, and <a href="#vehicleAccess">vehicle access</a>.
 
 The class <a href="#TrafficObservation">traffic observation</a> is a subclass of <a href="#http://www.w3.org/ns/sosa/Observation">sosa:Observation</a>, which has a  <a href="#validated">validated</a> property that represents whether the observation has been validated or not. The time at which the observation was made is expressed through the property <a href="#http://www.w3.org/ns/sosa/phenomenonTime">sosa:phenomenonTime</a>, which links to the class <a href="#http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>, which represents a time interval or a point in time. Finally, the observation has a feature of interest <a href="#https://www.w3.org/ns/sosa/hasFeatureOfInterest">sosa:hasFeatureOfInterest</a> which is a specific <a href="#TrafficObservationPoint">traffic observation point</a> where the observation is made.</p>
-<!-- INCIDENT -->
+
+<p>A traffic observation can <a href="#provesTrafficViolation">prove</a> a <a href="#TrafficViolation">traffic violation</a>, which in turn is associated with a <a href="#https://edint.es/def/censo-vehiculos/Vehicle">vehicle</a>. Traffic violations <a href="#trafficViolationType">have a type</a>, encoded as a <a href="#https://edint.es/kos/TrafficViolationType">SKOS taxonomy</a> of concepts—for example, "ciculation" (which includes speeding), "alcohol and drugs," etc. Furthermore, a violation can <a href="#trafficViolationSeverity">have a severity level</a>, also represented as a <a href="#https://edint.es/kos/TrafficViolationSeverity">SKOS taxonomy</a> of concepts—for example, "minor," "severe," or "very severe."</p>
+<!-- INCIDENT --> 
 
 <p>Figure 2 shows the classes and properties of traffic incidents.
 
