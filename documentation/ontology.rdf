@@ -33,7 +33,7 @@
         <terms:title xml:lang="en">EDINT Vehicle Traffic Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</terms:title>
         <vann:preferredNamespacePrefix>edinttraf</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/trafico#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/trafico#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</rdfs:comment>
         <rdfs:label xml:lang="es">Tráfico de Vehículos</rdfs:label>
@@ -1615,6 +1615,16 @@
      -->
 
 
+    
+
+
+    <!-- https://edint.es/def/trafico -->
+
+
+    <owl:NamedIndividual rdf:about="https://edint.es/def/trafico">
+        <terms:description xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos.</terms:description>
+        <terms:description xml:lang="en">The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</terms:description>
+    </owl:NamedIndividual>
     
 
 

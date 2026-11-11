@@ -24,7 +24,7 @@
                                 <http://purl.org/dc/terms/title> "EDINT Vehicle Traffic Ontology"@en ,
                                                                  "Ontología EDINT de Tráfico de Vehículos en las Ciudades"@es ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "edinttraf" ;
-                                <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/trafico#" ;
                                 rdfs:comment "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."@es ,
                                              "The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en ;
                                 rdfs:label "Tráfico de Vehículos"@es ,
@@ -1080,6 +1080,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://edint.es/def/trafico
+<https://edint.es/def/trafico> rdf:type owl:NamedIndividual ;
+                               <http://purl.org/dc/terms/description> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos."@es ,
+                                                                      "The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
+
 
 ###  https://edint.es/def/trafico#composition
 :composition rdf:type owl:NamedIndividual ,

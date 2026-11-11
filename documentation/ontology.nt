@@ -27,7 +27,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "EDINT Vehicle Traffic Ontology"@en .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "Ontología EDINT de Tráfico de Vehículos en las Ciudades"@es .
 <https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edinttraf" .
-<https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/trafico#> .
+<https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/trafico#" .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."@es .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico de Vehículos"@es .
@@ -970,6 +970,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #
 # #################################################################
 # 
+# 
+# https://edint.es/def/trafico
+<https://edint.es/def/trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/description> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos."@es .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/description> "The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
 # 
 # https://edint.es/def/trafico#composition
 <https://edint.es/def/trafico#composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
