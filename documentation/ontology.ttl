@@ -24,7 +24,7 @@
                                 <http://purl.org/dc/terms/title> "EDINT Vehicle Traffic Ontology"@en ,
                                                                  "Ontología EDINT de Tráfico de Vehículos en las Ciudades"@es ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "edinttraf" ;
-                                <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/trafico#" ;
                                 rdfs:comment "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."@es ,
                                              "The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en ;
                                 rdfs:label "Tráfico de Vehículos"@es ,
@@ -63,37 +63,37 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
           <http://xmlns.com/foaf/0.1/name> "FEMP" ;
           <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 
-_:genid6 rdfs:label "QUDT"@en ,
+_:genid6 rdfs:label "geo_core (IGN)"@en ,
+                     "geo_core (IGN)"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+
+_:genid7 rdfs:label "WGS84 Geo Positioning"@en ,
+                     "WGS84 Geo Positioning"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+
+_:genid8 rdfs:label "QUDT"@en ,
                      "QUDT"@es ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
 
-_:genid7 rdfs:label "Callejero (escjr)"@es ,
+_:genid9 rdfs:label "Callejero (escjr)"@es ,
                      "Street catalogue (escjr)"@en ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
-_:genid8 rdfs:label "GeoSPARQL"@en ,
-                     "GeoSPARQL"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid10 rdfs:label "GeoSPARQL"@en ,
+                      "GeoSPARQL"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
 
-_:genid9 rdfs:label "OGC Simple Features"@en ,
-                     "OGC Simple Features"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid11 rdfs:label "OGC Simple Features"@en ,
+                      "OGC Simple Features"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
 
-_:genid10 rdfs:label "WGS84 Geo Positioning"@en ,
-                      "WGS84 Geo Positioning"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
-
-_:genid11 rdfs:label "OWL-Time"@en ,
+_:genid12 rdfs:label "OWL-Time"@en ,
                       "OWL-Time"@es ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
 
-_:genid12 rdfs:label "SOSA/SSN"@en ,
+_:genid13 rdfs:label "SOSA/SSN"@en ,
                       "SOSA/SSN"@es ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
-
-_:genid13 rdfs:label "geo_core (IGN)"@en ,
-                      "geo_core (IGN)"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
 
 #################################################################
 #    Annotation properties
@@ -1080,6 +1080,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://edint.es/def/trafico
+<https://edint.es/def/trafico> rdf:type owl:NamedIndividual ;
+                               <http://purl.org/dc/terms/description> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos."@es ,
+                                                                      "The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
+
 
 ###  https://edint.es/def/trafico#composition
 :composition rdf:type owl:NamedIndividual ,

@@ -27,13 +27,13 @@
         <terms:creator rdf:nodeID="genid3"/>
         <terms:creator rdf:nodeID="genid4"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:modified>
         <terms:publisher rdf:nodeID="genid5"/>
         <terms:title xml:lang="en">EDINT Vehicle Traffic Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</terms:title>
         <vann:preferredNamespacePrefix>edinttraf</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/trafico#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/trafico#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</rdfs:comment>
         <rdfs:label xml:lang="es">Tráfico de Vehículos</rdfs:label>
@@ -78,44 +78,44 @@
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
-        <rdfs:label xml:lang="en">QUDT</rdfs:label>
-        <rdfs:label xml:lang="es">QUDT</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
-        <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
-        <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
-        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
-        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
-        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid10">
         <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
         <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdfs:label xml:lang="en">QUDT</rdfs:label>
+        <rdfs:label xml:lang="es">QUDT</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
+        <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid11">
+        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
         <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
         <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid12">
+    <rdf:Description rdf:nodeID="genid13">
         <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
         <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid13">
-        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
-        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
     </rdf:Description>
     
 
@@ -1615,6 +1615,16 @@
      -->
 
 
+    
+
+
+    <!-- https://edint.es/def/trafico -->
+
+
+    <owl:NamedIndividual rdf:about="https://edint.es/def/trafico">
+        <terms:description xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos.</terms:description>
+        <terms:description xml:lang="en">The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</terms:description>
+    </owl:NamedIndividual>
     
 
 
