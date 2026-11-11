@@ -10,16 +10,28 @@
   "@id" : "_:genid10",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "WGS84 Geo Positioning"
+    "@value" : "GeoSPARQL"
   }, {
     "@language" : "en",
-    "@value" : "WGS84 Geo Positioning"
+    "@value" : "GeoSPARQL"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
+    "@id" : "http://www.opengis.net/ont/geosparql"
   } ]
 }, {
   "@id" : "_:genid11",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
+  } ]
+}, {
+  "@id" : "_:genid12",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "OWL-Time"
@@ -31,7 +43,7 @@
     "@id" : "http://www.w3.org/2006/time"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid13",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "SOSA/SSN"
@@ -41,18 +53,6 @@
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
     "@id" : "http://www.w3.org/ns/sosa"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "geo_core (IGN)"
-  }, {
-    "@language" : "en",
-    "@value" : "geo_core (IGN)"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://datos.ign.es/def/geo_core"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -161,6 +161,30 @@
   "@id" : "_:genid6",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "WGS84 Geo Positioning"
+  }, {
+    "@language" : "en",
+    "@value" : "WGS84 Geo Positioning"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
     "@value" : "QUDT"
   }, {
     "@language" : "en",
@@ -170,7 +194,7 @@
     "@id" : "http://qudt.org/schema/qudt"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid9",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Street catalogue (escjr)"
@@ -180,30 +204,6 @@
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "GeoSPARQL"
-  }, {
-    "@language" : "en",
-    "@value" : "GeoSPARQL"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "OGC Simple Features"
-  }, {
-    "@language" : "en",
-    "@value" : "OGC Simple Features"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/sf"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
@@ -1348,7 +1348,7 @@
     "@value" : "2026-09-17"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+    "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
