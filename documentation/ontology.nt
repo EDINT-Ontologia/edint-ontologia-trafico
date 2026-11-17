@@ -18,7 +18,7 @@ _:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
 _:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/trafico> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/publisher> _:genid5 .
 _:genid5 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
@@ -27,7 +27,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "EDINT Vehicle Traffic Ontology"@en .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/title> "Ontología EDINT de Tráfico de Vehículos en las Ciudades"@es .
 <https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edinttraf" .
-<https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/trafico#> .
+<https://edint.es/def/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/trafico#" .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos."@es .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
 <https://edint.es/def/trafico> <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico de Vehículos"@es .
@@ -42,37 +42,37 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid6 .
-_:genid6 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
-_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
-_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid6 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
-_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
-_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
-_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid11 .
-_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid12 .
-_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid13 .
-_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
 # 
 # 
 # #################################################################
@@ -970,6 +970,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #
 # #################################################################
 # 
+# 
+# https://edint.es/def/trafico
+<https://edint.es/def/trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/description> "La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos."@es .
+<https://edint.es/def/trafico> <http://purl.org/dc/terms/description> "The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls."@en .
 # 
 # https://edint.es/def/trafico#composition
 <https://edint.es/def/trafico#composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
