@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix edintinfp: <https://edint.es/def/infraestructura#> .
+@prefix edintkos: <https://edint.es/kos/> .
+@prefix edintviotype: <https://edint.es/kos/TrafficViolationType/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:TrafficViolationType a skos:ConceptScheme ; 
+    dct:issued "2026-10-30"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Tipo de infracción de tráfico"@es ;
+    rdfs:label "Type of traffic violation"@en ;
+    skos:hasTopConcept edintviotype:circulation ;
+    skos:hasTopConcept edintviotype:alcoholAndDrugs ;
+    skos:hasTopConcept edintviotype:trafficPermit ;
+    skos:hasTopConcept edintviotype:technicalConditionVehicle ;
+    skos:hasTopConcept edintviotype:insurance ;
+    dct:title "Concept scheme grouping types of traffic violations for vehicles"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de violaciones de tráfico de vehículos"@es .
+    
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintviotype:circulation a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Circulación"@es ;
+  skos:prefLabel "Circulation"@en .
+
+edintviotype:alcoholAndDrugs a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Alcohol y drogas"@es ;
+  skos:prefLabel "Alcohol and drugs"@en .
+
+edintviotype:trafficPermit a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Autorización de circulación"@es ;
+  skos:prefLabel "Traffic permit"@en .
+
+edintviotype:technicalConditionVehicle a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Condición técnica del vehículo"@es ;
+  skos:prefLabel "Technical condition of the vehicle"@en .
+
+edintviotype:insurance a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Seguro"@es ;
+  skos:prefLabel "Insurance"@en .
+
+edintviotype:speeding a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Exceso de velocidad"@es ;
+  skos:broader edintviotype:circulation;
+  skos:prefLabel "Speeding"@en .
+
+edintviotype:alcoholConsumption a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationType;
+  skos:prefLabel "Consumo de alcohol"@es ;
+  skos:broader edintviotype:alcoholAndDrugs;
+  skos:prefLabel "Alcohol consumption"@en .
+
+
+
+
+
+

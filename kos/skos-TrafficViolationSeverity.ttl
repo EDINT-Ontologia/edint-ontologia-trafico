@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix edintinfp: <https://edint.es/def/infraestructura#> .
+@prefix edintkos: <https://edint.es/kos/> .
+@prefix edintviosever: <https://edint.es/kos/TrafficViolationSeverity/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:TrafficViolationSeverity a skos:ConceptScheme ; 
+    dct:issued "2026-10-30"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Gravedad de infracción de tráfico"@es ;
+    rdfs:label "Severity of traffic violation"@en ;
+    skos:hasTopConcept edintviosever:minor;
+    skos:hasTopConcept edintviosever:severe;
+    skos:hasTopConcept edintviosever:verysevere;
+    dct:title "Concept scheme grouping types of traffic violation severity for vehicles"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de gravedad de violaciones de tráfico de vehículos"@es .
+    
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintviosever:minor a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationSeverity;
+  skos:prefLabel "Leve"@es ;
+  skos:prefLabel "Minor"@en .
+
+edintviosever:severe a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationSeverity;
+  skos:prefLabel "Grave"@es ;
+  skos:prefLabel "Severe"@en .
+
+edintviosever:verysevere a skos:Concept;
+  skos:inScheme edintkos:TrafficViolationSeverity;
+  skos:prefLabel "Muy grave"@es ;
+  skos:prefLabel "Very severe"@en .
+
+
+
+
+
+
+
+
