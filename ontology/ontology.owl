@@ -56,20 +56,12 @@
                 <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
             </rdf:Description>
         </dcterms:creator>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
-        <dcterms:publisher>
-            <rdf:Description>
-                <foaf:homepage rdf:resource="https://www.femp.es/"/>
-                <foaf:name>FEMP</foaf:name>
-                <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
-            </rdf:Description>
-        </dcterms:publisher>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dcterms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Vehicle Traffic Ontology</dcterms:title>
         <dcterms:title xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades</dcterms:title>
         <vann:preferredNamespacePrefix>edinttraf</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/trafico#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/trafico#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Traffic ontology represents the vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</rdfs:comment>
         <rdfs:label xml:lang="es">Tráfico de Vehículos</rdfs:label>
@@ -79,67 +71,86 @@
         <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-trafico"/>
         <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
         <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
-        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-11</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+        <dcterms:publisher rdf:parseType="Resource">
+            <foaf:name>FEMP</foaf:name>
+            <foaf:homepage rdf:resource="https://www.femp.es/"/>
+            <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+        </dcterms:publisher>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Tráfico de Vehículos en las Ciudades. EDINT. Revisión: v0.1.1.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation xml:lang="en">EDINT Vehicle Traffic Ontology. EDINT. Revision: v0.1.1.</dcterms:bibliographicCitation>
+    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+    <dcterms:abstract xml:lang="es">El propósito de esta ontología de Tráfico es representar los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículo específicos.</dcterms:abstract>
+    <dcterms:abstract xml:lang="en">The purpose of the traffic ontology is to represent vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</dcterms:abstract>
+    <dcterms:description xml:lang="es">La ontología de Tráfico representa los datos de medición del tráfico de vehículos de una ciudad así como las incidencias planificadas y no planificadas que pueden ocurrir. Incluye también las observaciones de control de velocidad y acceso de vehículos específicos.</dcterms:description>
+    <dcterms:description xml:lang="en">The traffic ontology represents vehicle traffic measurement data for a city, as well as planned and unplanned incidents that may occur. It also includes observations of specific vehicle speed and access controls.</dcterms:description>
         <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
         <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
-        <widoco:vocabularyLabel>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+            <widoco:vocabularyLabel>
             <rdf:Description>
-                <rdfs:label xml:lang="en">QUDT</rdfs:label>
-                <rdfs:label xml:lang="es">QUDT</rdfs:label>
                 <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+                <rdfs:label xml:lang="es">QUDT</rdfs:label>
+                <rdfs:label xml:lang="en">QUDT</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
         <widoco:vocabularyLabel>
             <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
                 <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
                 <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
             </rdf:Description>
         </widoco:vocabularyLabel>
         <widoco:vocabularyLabel>
             <rdf:Description>
-                <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
-                <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
                 <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
         <widoco:vocabularyLabel>
             <rdf:Description>
-                <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
-                <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+                <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+                <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
         <widoco:vocabularyLabel>
             <rdf:Description>
-                <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
-                <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
-                <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
-                <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
                 <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+                <rdfs:label xml:lang="es">WGS84 Geo Positioning</rdfs:label>
+                <rdfs:label xml:lang="en">WGS84 Geo Positioning</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+                <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+                <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+                <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+                <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+                <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+                <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
             </rdf:Description>
         </widoco:vocabularyLabel>
     </owl:Ontology>
+    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </foaf:Organization>
     
 
 
@@ -1937,6 +1948,7 @@
         <rdfs:label xml:lang="en">Created</rdfs:label>
         <rdfs:comment xml:lang="es">Fecha de creación del recurso.</rdfs:comment>
     </rdf:Description>
+    
 </rdf:RDF>
 
 
