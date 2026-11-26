@@ -7,16 +7,16 @@
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/created> "2026-05-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid1 .
 _:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid2 .
 _:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid3 .
 _:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/creator> _:genid4 .
 _:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid4 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <https://edint.es/def/trafico> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -50,29 +50,29 @@ _:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/0
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
-_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
-_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid11 .
-_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid12 .
 _:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
 _:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
 _:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
 <https://edint.es/def/trafico> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid13 .
-_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
 # 
 # 
 # #################################################################
@@ -459,6 +459,15 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de Incidencia"@es .
 <https://edint.es/def/trafico#incidentType> <http://www.w3.org/2000/01/rdf-schema#label> "type of Incident"@en .
 # 
+# https://edint.es/def/trafico#linkedToVehicle
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/trafico#TrafficViolation> .
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/censo-vehiculos#Vehicle> .
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre una infracción de tráficulo y el vehículo que la comete."@es .
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a traffic violation and the vehicle that commits it."@en .
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "asociado al vehículo"@en .
+<https://edint.es/def/trafico#linkedToVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "linked to vehicle"@es .
+# 
 # https://edint.es/def/trafico#monitors
 <https://edint.es/def/trafico#monitors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/trafico#monitors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -468,6 +477,15 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/def/trafico#monitors> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between traffic equipment and the street section it monitors."@en .
 <https://edint.es/def/trafico#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitorea"@es .
 <https://edint.es/def/trafico#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitors"@en .
+# 
+# https://edint.es/def/trafico#provesTrafficViolation
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/trafico#TrafficObservation> .
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/trafico#TrafficViolation> .
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre una observación realizada por un equipo de tráfico, por ejemplo un radar, y la infracción del vehículo."@es .
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an observation made by a traffic equipment equipment—for example, a radar—and a vehicle's traffic violation."@en .
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/2000/01/rdf-schema#label> "demuestra infracción de tráfico"@es .
+<https://edint.es/def/trafico#provesTrafficViolation> <http://www.w3.org/2000/01/rdf-schema#label> "proves traffic violation"@en .
 # 
 # https://edint.es/def/trafico#startOfSection
 <https://edint.es/def/trafico#startOfSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -499,6 +517,30 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of traffic equipment, monitor equipment or meassuring devices"@en .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de Equipo de Tráfico"@es .
 <https://edint.es/def/trafico#trafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#label> "type of Traffic Equipment"@en .
+# 
+# https://edint.es/def/trafico#trafficViolationSeverity
+<https://edint.es/def/trafico#trafficViolationSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://edint.es/def/trafico#trafficViolationType
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/trafico#TrafficViolation> .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/TrafficViolationType> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre una infracción de tráfico y el tipo de infracción según una taxonomía definida de conceptos SKOS."@es .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a traffic violation and the type of violation, according to a defined taxonomy of SKOS concepts."@en .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de infracción de tráfico"@es .
+<https://edint.es/def/trafico#trafficViolationType> <http://www.w3.org/2000/01/rdf-schema#label> "traffic violation type"@en .
 # 
 # 
 # 
@@ -651,15 +693,15 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://edint.es/def/trafico#numDirections
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of directions of traffic"@en .
 <https://edint.es/def/trafico#numDirections> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de sentidos de circulación"@es .
@@ -668,15 +710,15 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://edint.es/def/trafico#numLanes
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#Incident> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/trafico#ControlEquipment> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of lanes of traffic"@en .
 <https://edint.es/def/trafico#numLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de carriles de circulación"@es .
@@ -734,10 +776,10 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Concept> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantifiable> .
-<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to \"http://physics.nist.gov/Pubs/SP811/sec07.html\", NIST SP 811, section 7 for more on quantity values." .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/schema/qudt> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity value" .
@@ -878,6 +920,17 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2004/02/skos/core#example> "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."@en .
 # 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://edint.es/def/censo-vehiculos#Vehicle
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/Vehicle/Vehicle> .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))"@es .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en))."@en .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+<https://edint.es/def/censo-vehiculos#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehículo"@es .
+# 
 # https://edint.es/def/trafico#ControlEquipment
 <https://edint.es/def/trafico#ControlEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/trafico#ControlEquipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/trafico#TrafficEquipment> .
@@ -954,6 +1007,13 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/def/trafico#TrafficProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Propiedad de tráfico"@es .
 <https://edint.es/def/trafico#TrafficProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic property"@en .
 # 
+# https://edint.es/def/trafico#TrafficViolation
+<https://edint.es/def/trafico#TrafficViolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/trafico#TrafficViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "Violation or direct non-compliance with the rules that drivers, pedestrians, and cyclists are required to observe when traveling on public roads."@en .
+<https://edint.es/def/trafico#TrafficViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "Vulneración o el incumplimiento directo de las reglas que los conductores, peatones y ciclistas están obligados a respetar cuando circulan por las vías públicas."@es .
+<https://edint.es/def/trafico#TrafficViolation> <http://www.w3.org/2000/01/rdf-schema#label> "infracción de tráfico"@es .
+<https://edint.es/def/trafico#TrafficViolation> <http://www.w3.org/2000/01/rdf-schema#label> "traffic violation"@en .
+# 
 # https://edint.es/def/trafico#UnplannedIncident
 <https://edint.es/def/trafico#UnplannedIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/trafico#UnplannedIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/trafico#Incident> .
@@ -961,6 +1021,9 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/def/trafico#UnplannedIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Unplanned traffic incident"@en .
 <https://edint.es/def/trafico#UnplannedIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Incidencia no planificada"@es .
 <https://edint.es/def/trafico#UnplannedIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Unplanned incident"@en .
+# 
+# https://saref.etsi.org/saref4auto/Vehicle/Vehicle
+<https://saref.etsi.org/saref4auto/Vehicle/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -1052,6 +1115,123 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/kos/TrafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de equipo de tráfico"@es .
 <https://edint.es/kos/TrafficEquipmentType> <http://www.w3.org/2000/01/rdf-schema#label> "type of traffic devices"@en .
 # 
+# https://edint.es/kos/TrafficViolationSeverity
+<https://edint.es/kos/TrafficViolationSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://edint.es/kos/TrafficViolationSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# https://edint.es/kos/TrafficViolationType
+<https://edint.es/kos/TrafficViolationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://edint.es/kos/TrafficViolationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# https://oeg.fi.upm.es/
+<https://oeg.fi.upm.es/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
+# 
+_:genid33 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid33 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid33 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid34 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid35 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid35 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid36 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid36 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid36 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid37 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid38 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid38 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid38 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid39 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid39 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid39 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid40 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid40 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid40 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+_:genid41 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid41 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid41 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid42 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
+_:genid43 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid44 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid44 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid45 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
+_:genid45 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
+_:genid45 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+_:genid46 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+_:genid46 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid46 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid47 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid47 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid47 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid48 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+_:genid48 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid48 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid49 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid49 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid50 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid50 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid51 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid51 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid52 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid52 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid53 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid53 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid54 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid54 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid54 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid55 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+_:genid55 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid55 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid56 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid56 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid56 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid57 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid57 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid57 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid58 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid58 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid59 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid59 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid60 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
+_:genid60 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
+_:genid60 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid61 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+_:genid61 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid61 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid62 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
+_:genid62 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
+_:genid62 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+_:genid63 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid63 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid63 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid64 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid64 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid65 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid65 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid66 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid67 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
+_:genid67 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
+_:genid67 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid68 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+_:genid68 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid68 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid69 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid69 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid69 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid70 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@en .
+_:genid70 <http://www.w3.org/2000/01/rdf-schema#label> "WGS84 Geo Positioning"@es .
+_:genid70 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+_:genid71 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid71 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 # 
 # 
 # #################################################################
@@ -1071,7 +1251,5 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/"@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
-# 
-<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

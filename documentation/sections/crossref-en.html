@@ -29,8 +29,10 @@ This section provides details for each class and property defined by Vehicle Tra
   <li><a href="#TrafficObservation" title="https://edint.es/def/trafico#TrafficObservation">Traffic observation</a></li>
   <li><a href="#TrafficObservationPoint" title="https://edint.es/def/trafico#TrafficObservationPoint">Traffic observation point</a></li>
   <li><a href="#TrafficProperty" title="https://edint.es/def/trafico#TrafficProperty">Traffic property</a></li>
+  <li><a href="#TrafficViolation" title="https://edint.es/def/trafico#TrafficViolation">traffic violation</a></li>
   <li><a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit"> <span>Unit</span> </a></li>
   <li><a href="#UnplannedIncident" title="https://edint.es/def/trafico#UnplannedIncident">Unplanned incident</a></li>
+  <li><a href="#https://edint.es/def/censo-vehiculos#Vehicle" title="https://edint.es/def/censo-vehiculos#Vehicle">Vehicle</a></li>
  </ul>
  <div class="entity" id="http://www.w3.org/2004/02/skos/core#Concept">
   <h3>Concept<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -73,7 +75,7 @@ This section provides details for each class and property defined by Vehicle Tra
    </dd>
    <dt>has members</dt>
    <dd>
-    <a href="#https://edint.es/kos/IncidentType" title="https://edint.es/kos/IncidentType">type of incident</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://edint.es/kos/TrafficEquipmentType" title="https://edint.es/kos/TrafficEquipmentType">type of traffic devices</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://edint.es/kos/TrafficViolationSeverity" title="https://edint.es/kos/TrafficViolationSeverity">Traffic Violation Severity</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://edint.es/kos/TrafficViolationType" title="https://edint.es/kos/TrafficViolationType">Traffic Violation Type</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://edint.es/kos/IncidentType" title="https://edint.es/kos/IncidentType">type of incident</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://edint.es/kos/TrafficEquipmentType" title="https://edint.es/kos/TrafficEquipmentType">type of traffic devices</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>is disjoint with</dt>
    <dd>
@@ -561,7 +563,7 @@ This section provides details for each class and property defined by Vehicle Tra
    </dd>
    <dt>is in domain of</dt>
    <dd>
-    <a href="#validated" title="https://edint.es/def/trafico#validated">validated observation</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#provesTrafficViolation" title="https://edint.es/def/trafico#provesTrafficViolation">proves traffic violation</a> <sup class="type-op" title="object property">op</sup>, <a href="#validated" title="https://edint.es/def/trafico#validated">validated observation</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -595,6 +597,23 @@ This section provides details for each class and property defined by Vehicle Tra
    </dd>
   </dl>
  </div>
+ <div class="entity" id="TrafficViolation">
+  <h3>traffic violation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/trafico#TrafficViolation</p>
+  <div class="comment">
+   <span class="markdown">Violation or direct non-compliance with the rules that drivers, pedestrians, and cyclists are required to observe when traveling on public roads.</span>
+  </div>
+  <dl class="description">
+   <dt>is in domain of</dt>
+   <dd>
+    <a href="#linkedToVehicle" title="https://edint.es/def/trafico#linkedToVehicle">asociado al vehículo</a> <sup class="type-op" title="object property">op</sup>, <a href="#trafficViolationType" title="https://edint.es/def/trafico#trafficViolationType">traffic violation type</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>is in range of</dt>
+   <dd>
+    <a href="#provesTrafficViolation" title="https://edint.es/def/trafico#provesTrafficViolation">proves traffic violation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://qudt.org/schema/qudt/Unit">
   <h3>Unit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://qudt.org/schema/qudt/Unit</p>
@@ -622,9 +641,27 @@ This section provides details for each class and property defined by Vehicle Tra
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://edint.es/def/censo-vehiculos#Vehicle">
+  <h3>Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/censo-vehiculos#Vehicle</p>
+  <div class="comment">
+   <span class="markdown">Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en)).</span>
+  </div>
+  <dl class="description">
+   <dt>has super-classes</dt>
+   <dd>
+    <a href="https://saref.etsi.org/saref4auto/Vehicle/Vehicle" target="_blank" title="https://saref.etsi.org/saref4auto/Vehicle/Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>is in range of</dt>
+   <dd>
+    <a href="#linkedToVehicle" title="https://edint.es/def/trafico#linkedToVehicle">asociado al vehículo</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
+  <li><a href="#linkedToVehicle" title="https://edint.es/def/trafico#linkedToVehicle">asociado al vehículo</a></li>
   <li><a href="#containsStreetSection" title="https://edint.es/def/trafico#containsStreetSection">contains street section</a></li>
   <li><a href="#endOfSection" title="https://edint.es/def/trafico#endOfSection">end of section</a></li>
   <li><a href="#http://www.w3.org/2006/time#hasBeginning" title="http://www.w3.org/2006/time#hasBeginning">Has Beginning</a></li>
@@ -643,11 +680,32 @@ This section provides details for each class and property defined by Vehicle Tra
   <li><a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a></li>
   <li><a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a></li>
   <li><a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">phenomenon time</a></li>
+  <li><a href="#provesTrafficViolation" title="https://edint.es/def/trafico#provesTrafficViolation">proves traffic violation</a></li>
   <li><a href="#startOfSection" title="https://edint.es/def/trafico#startOfSection">start of section</a></li>
+  <li><a href="#trafficViolationType" title="https://edint.es/def/trafico#trafficViolationType">traffic violation type</a></li>
   <li><a href="#incidentType" title="https://edint.es/def/trafico#incidentType">type of Incident</a></li>
   <li><a href="#trafficEquipmentType" title="https://edint.es/def/trafico#trafficEquipmentType">type of Traffic Equipment</a></li>
   <li><a href="#http://www.w3.org/ns/sosa/wasObservedBy" title="http://www.w3.org/ns/sosa/wasObservedBy">was observed by</a></li>
  </ul>
+ <div class="entity" id="linkedToVehicle">
+  <h3>asociado al vehículo<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/trafico#linkedToVehicle</p>
+  <div class="comment">
+   <span class="markdown">Relationship between a traffic violation and the vehicle that commits it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>has domain</dt>
+    <dd>
+     <a href="#TrafficViolation" title="https://edint.es/def/trafico#TrafficViolation">traffic violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>has range</dt>
+    <dd>
+     <a href="#https://edint.es/def/censo-vehiculos#Vehicle" title="https://edint.es/def/censo-vehiculos#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="containsStreetSection">
   <h3>contains street section<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/trafico#containsStreetSection</p>
@@ -1029,6 +1087,25 @@ This section provides details for each class and property defined by Vehicle Tra
    </dd>
   </dl>
  </div>
+ <div class="entity" id="provesTrafficViolation">
+  <h3>proves traffic violation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/trafico#provesTrafficViolation</p>
+  <div class="comment">
+   <span class="markdown">The relationship between an observation made by a traffic equipment equipment—for example, a radar—and a vehicle's traffic violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>has domain</dt>
+    <dd>
+     <a href="#TrafficObservation" title="https://edint.es/def/trafico#TrafficObservation">Traffic observation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>has range</dt>
+    <dd>
+     <a href="#TrafficViolation" title="https://edint.es/def/trafico#TrafficViolation">traffic violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="startOfSection">
   <h3>start of section<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/trafico#startOfSection</p>
@@ -1045,6 +1122,29 @@ This section provides details for each class and property defined by Vehicle Tra
     <dt>has range</dt>
     <dd>
      <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Geographic Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="trafficViolationType">
+  <h3>traffic violation type<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/def/trafico#trafficViolationType</p>
+  <div class="comment">
+   <span class="markdown">Relationship between a traffic violation and the type of violation, according to a defined taxonomy of SKOS concepts.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>has super-properties</dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>has domain</dt>
+    <dd>
+     <a href="#TrafficViolation" title="https://edint.es/def/trafico#TrafficViolation">traffic violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>has range</dt>
+    <dd>
+     <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="#https://edint.es/kos/TrafficViolationType" title="https://edint.es/kos/TrafficViolationType">Traffic Violation Type</a> <sup class="type-ni" title="named individual">ni</sup>)
     </dd>
    </dl>
   </div>
@@ -1565,12 +1665,15 @@ This section provides details for each class and property defined by Vehicle Tra
  <h3 id="namedindividuals-headline" class="list">Named Individuals</h3>
  <ul class="hlist">
   <li><a href="#composition" title="https://edint.es/def/trafico#composition">composition</a></li>
+  <li><a href="#https://oeg.fi.upm.es/" title="https://oeg.fi.upm.es/"> <span>https://oeg.fi.upm.es/</span> </a></li>
   <li><a href="#level" title="https://edint.es/def/trafico#level">level</a></li>
   <li><a href="#occupation" title="https://edint.es/def/trafico#occupation">occupation</a></li>
   <li><a href="#speed" title="https://edint.es/def/trafico#speed">speed</a></li>
   <li><a href="#density" title="https://edint.es/def/trafico#density">traffic density</a></li>
   <li><a href="#intensity" title="https://edint.es/def/trafico#intensity">traffic intensity</a></li>
   <li><a href="#load" title="https://edint.es/def/trafico#load">traffic load</a></li>
+  <li><a href="#https://edint.es/kos/TrafficViolationSeverity" title="https://edint.es/kos/TrafficViolationSeverity"> <span>Traffic Violation Severity</span> </a></li>
+  <li><a href="#https://edint.es/kos/TrafficViolationType" title="https://edint.es/kos/TrafficViolationType"> <span>Traffic Violation Type</span> </a></li>
   <li><a href="#https://edint.es/kos/IncidentType" title="https://edint.es/kos/IncidentType">type of incident</a></li>
   <li><a href="#https://edint.es/kos/TrafficEquipmentType" title="https://edint.es/kos/TrafficEquipmentType">type of traffic devices</a></li>
   <li><a href="#vehicleAccess" title="https://edint.es/def/trafico#vehicleAccess">vehicle access</a></li>
@@ -1588,6 +1691,10 @@ This section provides details for each class and property defined by Vehicle Tra
     <a href="#TrafficProperty" title="https://edint.es/def/trafico#TrafficProperty">Traffic property</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
+ </div>
+ <div class="entity" id="https://oeg.fi.upm.es/">
+  <h3>https://oeg.fi.upm.es/<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://oeg.fi.upm.es/</p>
  </div>
  <div class="entity" id="level">
   <h3>level<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
@@ -1664,6 +1771,26 @@ This section provides details for each class and property defined by Vehicle Tra
    <dt>belongs to</dt>
    <dd>
     <a href="#TrafficProperty" title="https://edint.es/def/trafico#TrafficProperty">Traffic property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://edint.es/kos/TrafficViolationSeverity">
+  <h3>Traffic Violation Severity<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/kos/TrafficViolationSeverity</p>
+  <dl class="description">
+   <dt>belongs to</dt>
+   <dd>
+    <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://edint.es/kos/TrafficViolationType">
+  <h3>Traffic Violation Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://edint.es/kos/TrafficViolationType</p>
+  <dl class="description">
+   <dt>belongs to</dt>
+   <dd>
+    <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

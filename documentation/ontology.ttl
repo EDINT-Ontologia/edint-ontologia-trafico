@@ -47,16 +47,16 @@
                                                                                 _:genid12 ,
                                                                                 _:genid13 .
 
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid4 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
@@ -71,29 +71,29 @@ _:genid7 rdfs:label "WGS84 Geo Positioning"@en ,
                      "WGS84 Geo Positioning"@es ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
 
-_:genid8 rdfs:label "QUDT"@en ,
-                     "QUDT"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid8 rdfs:label "OGC Simple Features"@en ,
+                     "OGC Simple Features"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
 
-_:genid9 rdfs:label "Callejero (escjr)"@es ,
-                     "Street catalogue (escjr)"@en ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+_:genid9 rdfs:label "GeoSPARQL"@en ,
+                     "GeoSPARQL"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
 
-_:genid10 rdfs:label "GeoSPARQL"@en ,
-                      "GeoSPARQL"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid10 rdfs:label "Callejero (escjr)"@es ,
+                      "Street catalogue (escjr)"@en ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
-_:genid11 rdfs:label "OGC Simple Features"@en ,
-                      "OGC Simple Features"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid11 rdfs:label "SOSA/SSN"@en ,
+                      "SOSA/SSN"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
 
 _:genid12 rdfs:label "OWL-Time"@en ,
                       "OWL-Time"@es ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
 
-_:genid13 rdfs:label "SOSA/SSN"@en ,
-                      "SOSA/SSN"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid13 rdfs:label "QUDT"@en ,
+                      "QUDT"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
 
 #################################################################
 #    Annotation properties
@@ -535,6 +535,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "type of Incident"@en .
 
 
+###  https://edint.es/def/trafico#linkedToVehicle
+:linkedToVehicle rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TrafficViolation ;
+                 rdfs:range <https://edint.es/def/censo-vehiculos#Vehicle> ;
+                 rdfs:comment "Relación entre una infracción de tráficulo y el vehículo que la comete."@es ,
+                              "Relationship between a traffic violation and the vehicle that commits it."@en ;
+                 rdfs:label "asociado al vehículo"@en ,
+                            "linked to vehicle"@es .
+
+
 ###  https://edint.es/def/trafico#monitors
 :monitors rdf:type owl:ObjectProperty ,
                    owl:FunctionalProperty ;
@@ -544,6 +554,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        "Relationship between traffic equipment and the street section it monitors."@en ;
           rdfs:label "monitorea"@es ,
                      "monitors"@en .
+
+
+###  https://edint.es/def/trafico#provesTrafficViolation
+:provesTrafficViolation rdf:type owl:ObjectProperty ;
+                        rdfs:domain :TrafficObservation ;
+                        rdfs:range :TrafficViolation ;
+                        rdfs:comment "Relación entre una observación realizada por un equipo de tráfico, por ejemplo un radar, y la infracción del vehículo."@es ,
+                                     "The relationship between an observation made by a traffic equipment equipment—for example, a radar—and a vehicle's traffic violation."@en ;
+                        rdfs:label "demuestra infracción de tráfico"@es ,
+                                   "proves traffic violation"@en .
 
 
 ###  https://edint.es/def/trafico#startOfSection
@@ -573,6 +593,28 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                    "Type of traffic equipment, monitor equipment or meassuring devices"@en ;
                       rdfs:label "tipo de Equipo de Tráfico"@es ,
                                  "type of Traffic Equipment"@en .
+
+
+###  https://edint.es/def/trafico#trafficViolationSeverity
+:trafficViolationSeverity rdf:type owl:ObjectProperty .
+
+
+###  https://edint.es/def/trafico#trafficViolationType
+:trafficViolationType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain :TrafficViolation ;
+                      rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                          owl:hasValue <https://edint.es/kos/TrafficViolationType>
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+                      rdfs:comment "Relación entre una infracción de tráfico y el tipo de infracción según una taxonomía definida de conceptos SKOS."@es ,
+                                   "Relationship between a traffic violation and the type of violation, according to a defined taxonomy of SKOS concepts."@en ;
+                      rdfs:label "tipo de infracción de tráfico"@es ,
+                                 "traffic violation type"@en .
 
 
 #################################################################
@@ -983,6 +1025,19 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                    <http://www.w3.org/2004/02/skos/core#example> "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."@en .
 
 
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
+###  https://edint.es/def/censo-vehiculos#Vehicle
+<https://edint.es/def/censo-vehiculos#Vehicle> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://saref.etsi.org/saref4auto/Vehicle/Vehicle> ;
+                                               rdfs:comment "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))"@es ,
+                                                            "Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en))."@en ;
+                                               rdfs:label "Vehicle"@en ,
+                                                          "Vehículo"@es .
+
+
 ###  https://edint.es/def/trafico#ControlEquipment
 :ControlEquipment rdf:type owl:Class ;
                   rdfs:subClassOf :TrafficEquipment ;
@@ -1068,6 +1123,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "Traffic property"@en .
 
 
+###  https://edint.es/def/trafico#TrafficViolation
+:TrafficViolation rdf:type owl:Class ;
+                  rdfs:comment "Violation or direct non-compliance with the rules that drivers, pedestrians, and cyclists are required to observe when traveling on public roads."@en ,
+                               "Vulneración o el incumplimiento directo de las reglas que los conductores, peatones y ciclistas están obligados a respetar cuando circulan por las vías públicas."@es ;
+                  rdfs:label "infracción de tráfico"@es ,
+                             "traffic violation"@en .
+
+
 ###  https://edint.es/def/trafico#UnplannedIncident
 :UnplannedIncident rdf:type owl:Class ;
                    rdfs:subClassOf :Incident ;
@@ -1075,6 +1138,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 "Unplanned traffic incident"@en ;
                    rdfs:label "Incidencia no planificada"@es ,
                               "Unplanned incident"@en .
+
+
+###  https://saref.etsi.org/saref4auto/Vehicle/Vehicle
+<https://saref.etsi.org/saref4auto/Vehicle/Vehicle> rdf:type owl:Class .
 
 
 #################################################################
@@ -1173,24 +1240,180 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                        "type of traffic devices"@en .
 
 
+###  https://edint.es/kos/TrafficViolationSeverity
+<https://edint.es/kos/TrafficViolationSeverity> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  https://edint.es/kos/TrafficViolationType
+<https://edint.es/kos/TrafficViolationType> rdf:type owl:NamedIndividual ,
+                                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  https://oeg.fi.upm.es/
+<https://oeg.fi.upm.es/> rdf:type owl:NamedIndividual ;
+                         <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
+
+
+_:genid33 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
+          <http://xmlns.com/foaf/0.1/name> "FEMP" ;
+          <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+
+_:genid34 rdfs:label "OWL-Time"@en ,
+                      "OWL-Time"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+
+_:genid35 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid36 rdfs:label "SOSA/SSN"@en ,
+                      "SOSA/SSN"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+
+_:genid37 rdfs:label "QUDT"@en ,
+                      "QUDT"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+
+_:genid38 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
+           <http://xmlns.com/foaf/0.1/name> "FEMP" ;
+           <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+
+_:genid39 rdfs:label "SOSA/SSN"@en ,
+                      "SOSA/SSN"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+
+_:genid40 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
+           <http://xmlns.com/foaf/0.1/name> "FEMP" ;
+           <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+
+_:genid41 rdfs:label "GeoSPARQL"@en ,
+                      "GeoSPARQL"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+
+_:genid42 rdfs:label "OGC Simple Features"@en ,
+                      "OGC Simple Features"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+
+_:genid43 rdfs:label "Callejero (escjr)"@es ,
+                      "Street catalogue (escjr)"@en ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+_:genid44 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid45 rdfs:label "WGS84 Geo Positioning"@en ,
+                      "WGS84 Geo Positioning"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+
+_:genid46 rdfs:label "OWL-Time"@en ,
+                      "OWL-Time"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+
+_:genid47 rdfs:label "SOSA/SSN"@en ,
+                      "SOSA/SSN"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+
+_:genid48 rdfs:label "geo_core (IGN)"@en ,
+                      "geo_core (IGN)"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+
+_:genid49 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid50 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid51 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid52 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid53 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid54 rdfs:label "QUDT"@en ,
+                      "QUDT"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+
+_:genid55 rdfs:label "geo_core (IGN)"@en ,
+                      "geo_core (IGN)"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+
+_:genid56 rdfs:label "GeoSPARQL"@en ,
+                      "GeoSPARQL"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+
+_:genid57 rdfs:label "QUDT"@en ,
+                      "QUDT"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+
+_:genid58 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid59 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid60 rdfs:label "Callejero (escjr)"@es ,
+                      "Street catalogue (escjr)"@en ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+_:genid61 rdfs:label "OWL-Time"@en ,
+                      "OWL-Time"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+
+_:genid62 rdfs:label "WGS84 Geo Positioning"@en ,
+                      "WGS84 Geo Positioning"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+
+_:genid63 rdfs:label "OGC Simple Features"@en ,
+                      "OGC Simple Features"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+
+_:genid64 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid65 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
+_:genid66 rdfs:label "OGC Simple Features"@en ,
+                      "OGC Simple Features"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+
+_:genid67 rdfs:label "Callejero (escjr)"@es ,
+                      "Street catalogue (escjr)"@en ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+_:genid68 rdfs:label "geo_core (IGN)"@en ,
+                      "geo_core (IGN)"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+
+_:genid69 rdfs:label "GeoSPARQL"@en ,
+                      "GeoSPARQL"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+
+_:genid70 rdfs:label "WGS84 Geo Positioning"@en ,
+                      "WGS84 Geo Positioning"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2003/01/geo/wgs84_pos> .
+
+_:genid71 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+
 #################################################################
 #    Annotations
 #################################################################
 
 <http://purl.org/dc/terms/created> rdfs:comment "Date of creation of the resource."@en ,
-                                                "Fecha de creación del recurso."@es ;
-                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                   rdfs:label "Creado"@es ,
-                                              "Created"@en .
+                                                 "Fecha de creación del recurso."@es ;
+                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                    rdfs:label "Creado"@es ,
+                                               "Created"@en .
 
 
 <http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> ;
                                   rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
                                   rdfs:isDefinedBy "http://purl.org/dc/terms/"@en ;
                                   rdfs:label "Date Issued"@en .
-
-
-<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
