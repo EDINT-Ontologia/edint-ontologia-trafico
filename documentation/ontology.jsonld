@@ -1,7 +1,7 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Daniel Doña"
+    "@value" : "Lucía Sánchez"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -9,26 +9,26 @@
 }, {
   "@id" : "_:genid10",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "GeoSPARQL"
-  }, {
     "@language" : "en",
-    "@value" : "GeoSPARQL"
+    "@value" : "Street catalogue (escjr)"
+  }, {
+    "@language" : "es",
+    "@value" : "Callejero (escjr)"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
   } ]
 }, {
   "@id" : "_:genid11",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "OGC Simple Features"
+    "@value" : "SOSA/SSN"
   }, {
     "@language" : "en",
-    "@value" : "OGC Simple Features"
+    "@value" : "SOSA/SSN"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/sf"
+    "@id" : "http://www.w3.org/ns/sosa"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -46,13 +46,13 @@
   "@id" : "_:genid13",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "SOSA/SSN"
+    "@value" : "QUDT"
   }, {
     "@language" : "en",
-    "@value" : "SOSA/SSN"
+    "@value" : "QUDT"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.w3.org/ns/sosa"
+    "@id" : "http://qudt.org/schema/qudt"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -86,7 +86,7 @@
 }, {
   "@id" : "_:genid2",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Edna Ruckhaus"
+    "@value" : "Socorro Bernardos"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -103,15 +103,24 @@
 }, {
   "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://edint.es/def/trafico#ControlEquipment"
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "https://edint.es/def/trafico#Incident"
+      "@id" : "_:genid24"
     } ]
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://edint.es/kos/TrafficViolationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -121,7 +130,25 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://edint.es/def/trafico#ControlEquipment"
+    }, {
+      "@id" : "https://edint.es/def/trafico#Incident"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -131,7 +158,140 @@
     "@id" : "http://qudt.org/schema/qudt/hasUnit"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid33",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OWL-Time"
+  }, {
+    "@language" : "es",
+    "@value" : "OWL-Time"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2006/time"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SOSA/SSN"
+  }, {
+    "@language" : "es",
+    "@value" : "SOSA/SSN"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/sosa"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "QUDT"
+  }, {
+    "@language" : "es",
+    "@value" : "QUDT"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://qudt.org/schema/qudt"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SOSA/SSN"
+  }, {
+    "@language" : "es",
+    "@value" : "SOSA/SSN"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/sosa"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "es",
+    "@value" : "GeoSPARQL"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Callejero (escjr)"
+  }, {
+    "@language" : "en",
+    "@value" : "Street catalogue (escjr)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ]
+}, {
+  "@id" : "_:genid44",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Lucía Sánchez"
   } ],
@@ -139,9 +299,57 @@
     "@id" : "https://oeg.fi.upm.es/"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid45",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WGS84 Geo Positioning"
+  }, {
+    "@language" : "es",
+    "@value" : "WGS84 Geo Positioning"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OWL-Time"
+  }, {
+    "@language" : "es",
+    "@value" : "OWL-Time"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2006/time"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SOSA/SSN"
+  }, {
+    "@language" : "es",
+    "@value" : "SOSA/SSN"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/sosa"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid49",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Socorro Bernardos"
+    "@value" : "Lucía Sánchez"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -158,6 +366,102 @@
     "@value" : "Federación Española de Municipios y Provincias"
   } ]
 }, {
+  "@id" : "_:genid50",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "QUDT"
+  }, {
+    "@language" : "es",
+    "@value" : "QUDT"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://qudt.org/schema/qudt"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "es",
+    "@value" : "GeoSPARQL"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "QUDT"
+  }, {
+    "@language" : "es",
+    "@value" : "QUDT"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://qudt.org/schema/qudt"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
   "@id" : "_:genid6",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -168,6 +472,118 @@
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
     "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Callejero (escjr)"
+  }, {
+    "@language" : "en",
+    "@value" : "Street catalogue (escjr)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OWL-Time"
+  }, {
+    "@language" : "es",
+    "@value" : "OWL-Time"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2006/time"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WGS84 Geo Positioning"
+  }, {
+    "@language" : "es",
+    "@value" : "WGS84 Geo Positioning"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Callejero (escjr)"
+  }, {
+    "@language" : "en",
+    "@value" : "Street catalogue (escjr)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "es",
+    "@value" : "GeoSPARQL"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -182,28 +598,48 @@
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
   } ]
 }, {
+  "@id" : "_:genid70",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WGS84 Geo Positioning"
+  }, {
+    "@language" : "es",
+    "@value" : "WGS84 Geo Positioning"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
   "@id" : "_:genid8",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "QUDT"
+    "@value" : "OGC Simple Features"
   }, {
     "@language" : "en",
-    "@value" : "QUDT"
+    "@value" : "OGC Simple Features"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://qudt.org/schema/qudt"
+    "@id" : "http://www.opengis.net/ont/sf"
   } ]
 }, {
   "@id" : "_:genid9",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Street catalogue (escjr)"
-  }, {
     "@language" : "es",
-    "@value" : "Callejero (escjr)"
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+    "@id" : "http://www.opengis.net/ont/geosparql"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
@@ -375,7 +811,7 @@
   }, {
     "@id" : "http://qudt.org/schema/qudt/Quantifiable"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid32"
   } ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/Unit",
@@ -1262,6 +1698,9 @@
     "@id" : "http://www.w3.org/ns/sosa/ObservationCollection"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1312,6 +1751,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/censo-vehiculos#Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))"
+  }, {
+    "@language" : "en",
+    "@value" : "Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en))."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vehicle"
+  }, {
+    "@language" : "es",
+    "@value" : "Vehículo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4auto/Vehicle/Vehicle"
   } ]
 }, {
   "@id" : "https://edint.es/def/trafico",
@@ -1630,6 +2089,23 @@
     "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
   } ]
 }, {
+  "@id" : "https://edint.es/def/trafico#TrafficViolation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Violation or direct non-compliance with the rules that drivers, pedestrians, and cyclists are required to observe when traveling on public roads."
+  }, {
+    "@language" : "es",
+    "@value" : "Vulneración o el incumplimiento directo de las reglas que los conductores, peatones y ciclistas están obligados a respetar cuando circulan por las vías públicas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "infracción de tráfico"
+  }, {
+    "@language" : "en",
+    "@value" : "traffic violation"
+  } ]
+}, {
   "@id" : "https://edint.es/def/trafico#UnplannedIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1923,6 +2399,29 @@
     "@value" : "nivel"
   } ]
 }, {
+  "@id" : "https://edint.es/def/trafico#linkedToVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre una infracción de tráficulo y el vehículo que la comete."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between a traffic violation and the vehicle that commits it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/trafico#TrafficViolation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "asociado al vehículo"
+  }, {
+    "@language" : "es",
+    "@value" : "linked to vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/censo-vehiculos#Vehicle"
+  } ]
+}, {
   "@id" : "https://edint.es/def/trafico#load",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2002,7 +2501,7 @@
     "@value" : "Número de sentidos de circulación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -2025,7 +2524,7 @@
     "@value" : "Número de carriles de circulación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid29"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -2056,6 +2555,29 @@
   }, {
     "@language" : "es",
     "@value" : "ocupación"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/trafico#provesTrafficViolation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre una observación realizada por un equipo de tráfico, por ejemplo un radar, y la infracción del vehículo."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between an observation made by a traffic equipment equipment—for example, a radar—and a vehicle's traffic violation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/trafico#TrafficObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "demuestra infracción de tráfico"
+  }, {
+    "@language" : "en",
+    "@value" : "proves traffic violation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/trafico#TrafficViolation"
   } ]
 }, {
   "@id" : "https://edint.es/def/trafico#recurrence",
@@ -2148,6 +2670,35 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/trafico#trafficViolationSeverity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://edint.es/def/trafico#trafficViolationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre una infracción de tráfico y el tipo de infracción según una taxonomía definida de conceptos SKOS."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between a traffic violation and the type of violation, according to a defined taxonomy of SKOS concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/trafico#TrafficViolation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de infracción de tráfico"
+  }, {
+    "@language" : "en",
+    "@value" : "traffic violation type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "https://edint.es/def/trafico#urban",
@@ -2248,10 +2799,26 @@
     "@value" : "type of traffic devices"
   } ]
 }, {
+  "@id" : "https://edint.es/kos/TrafficViolationSeverity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://edint.es/kos/TrafficViolationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
   "@id" : "https://oeg.fi.upm.es/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Ontology Engineering Group, UPM"
   } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4auto/Vehicle/Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://schema.org/affiliation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
